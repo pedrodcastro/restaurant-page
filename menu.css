@@ -1,0 +1,93 @@
+:root {
+  --primary-font: "Open Sans", sans-serif;
+  --light-gray: #d3d3d3;
+  --white: #fff;
+  --charcoal: #36454f;
+  --blue-denim: #6f8faf;
+  --yellow-goldenrod: #daa520;
+  --box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.our-menu {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.menu h2 {
+    font-size: 32px;
+}
+
+.underline {
+    display: block;
+    background-color: var(--yellow-goldenrod);
+    width: 80px;
+    height: 4px;
+}
+
+.btns-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 3rem
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  max-width: 700px;
+}
+
+.photo {
+  object-fit: cover;
+  max-height: 200px;
+  width: 300px;
+  border-radius: 8px;
+  border: solid 2px var(--yellow-goldenrod);
+}
+
+.item-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-item header {
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    border-bottom: solid 0.5px var(--charcoal);
+}
+
+.item-infos h4 {
+    text-transform: capitalize;
+}
+
+.item-infos p {
+    text-align: start;
+}
+
+.price {
+    color: var(--yellow-goldenrod);
+}
+
+.price::before {
+    content: "R$ ";
+}
+
