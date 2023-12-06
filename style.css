@@ -1,15 +1,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
 
 :root {
-    --primary-font: 'Open Sans', sans-serif;
-    --light-gray: #d3d3d3;
-    --white: #fff;
-    --charcoal: #36454f;
-    --blue-denim: #6F8FAF;
-    --yellow-goldenrod: #DAA520;
-    --platinum: #E5E4E2;
-    --background-color: #e8ebfc;
-    --box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  --primary-font: "Open Sans", sans-serif;
+  --light-gray: #d3d3d3;
+  --white: #fff;
+  --charcoal: #36454f;
+  --blue-denim: #6f8faf;
+  --yellow-goldenrod: #daa520;
+  --platinum: #e5e4e2;
+  --background-color: #e8ebfc;
+  --box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -22,7 +22,6 @@ body {
   justify-content: center;
   font-family: var(--primary-font);
   background-color: var(--background-color);
-  box-sizing: content-box;
 }
 
 .faq-container {
@@ -30,7 +29,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  width: 500px;
+  max-width: 500px;
 }
 
 .title {
@@ -41,15 +40,17 @@ body {
 .question {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  background-color:var(--white);
+  background-color: var(--white);
   padding: 16px;
   border-radius: 8px;
   box-shadow: var(--box-shadow);
+  max-width: 30rem;
+  width: 100%;
 }
 
 .question-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -71,7 +72,6 @@ body {
   cursor: pointer;
   color: var(--white);
   background-color: var(--yellow-goldenrod);
-
 }
 
 .plusBtn {
@@ -102,6 +102,13 @@ body {
 .show-text .description {
   height: auto;
   border-top: solid 1px var(--charcoal);
-  margin-top: 8px;
   padding-top: 8px;
+  margin-top: 8px;
 }
+
+@media screen and (min-width: 768px) {
+  .question {
+    width: 30rem;
+  }
+}
+
